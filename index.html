@@ -17,11 +17,25 @@
       
       <h1>2. Basic Mirror BSDF</h1><hr/>
       <p>We implemented a basic BSDF in Mitsuba in order to get more familiar with the structure of how BSDFs are implemented in Mitsuba. The BSDFs shared similar methods.</p>
-      <p> The mirror BSDF has only spectral reflection without diffuse, thus providing a mirror-like surface to the object. We also set roughness to 0 and experimented with different reflection patterns such as glossy and EDiscrete which resulted in different “blurriness” of the reflection. </p>
-      <img src="..." class="img-fluid">
-      <figcaption class="figure-caption">Exaggerated Specular</figcaption>
+      <p>The mirror BSDF has only spectral reflection without diffuse, thus providing a mirror-like surface to the object. We also set roughness to 0 and experimented with different reflection patterns such as glossy and EDiscrete which resulted in different “blurriness” of the reflection. </p>
+      <img src="image2.png" class="img-fluid">
+      <figcaption class="figure-caption">Teacup with Mirrored Surface</figcaption>
   
-      <h1
+      <h1>3. Kajiya-Kay Hair Shading Model</h1><hr/>
+      <p>We worked on implementing Kajiya-Kay first since we only had to adapt the specular term. </p>
+      <img src="image1.png" class="img-fluid">
+      <figcaption class="figure-caption">Exaggerated Specular</figcaption>
+      <img src="image3.png" class="img-fluid">
+      <figcaption class="figure-caption">Specular and Diffuse</figcaption>
+      <img src="image4.png" class="img-fluid">
+      <figcaption class="figure-caption">Original Blinn Phong Model</figcaption>
+  
+      <h1>4. Getting an understanding of the Marschner Model</h1><hr/>
+      <p>We spent a fair bit of time reading the literature behind the Marschner model, and gained a complete understanding of the intuition and mathematics of the BCSDF. This will be key as we look into implementation details and accelerations that may be necessary.</p>
+  
+      <h1>2. Basic Mirror BSDF</h1><hr/>
+      <p>The Mitsuba simulator definitely took a bit longer to set up than we liked, taking up most of our first and second week. We’re hoping to wrap up the Marschner model in the next few days and start the Yan model before the end of this week. Hopefully we’ll finish everything on time and have time to set up our presentation before next Thursday. </p>
+      <p>Compared with our original plan, we are currently behind by just a little bit due to unexpected issues. However, we’ve managed to solve most of these issues and are focused fully on implementing the models.</p>
     </div>
   </body>
 </html>
