@@ -12,13 +12,16 @@
         <p>Visualizing different fur rendering techniques such as Marschner (2003) model and the Yan (2015) model and comparing rendering speed and quality. </br> Team: Ja Wattanawong, Briana Zhang, Richard Liu, Yi Liu</p>
       </div>
       <h1>1. Mitsuba</h1><hr/>
-      <p>We first worked on getting Mitsuba to work. We found that Mitsuba 2.0 no longer implemented rendering of hair and would require complicated steps to implement. 
-        Thus we switched over to Mitsuba 0.5 as it still implemented hair. In order to build the older version of Mitsuba, we utilized scons with a custom
-        setup process for both Mac and Ubuntu in order to build Mitsuba.</p>
-      <p>While in the end we were able to run Mitsuba, we found that the GUI crashes on Ubuntu and Mac but was successfully able to convert the scene.xml files
-        that described the layout and meshes of the objects to 0.6, which allows Mitsuba to render the objects and save the result as a png file. </p>
-      <h1>2. Basic BSDF</h1><hr/>
-      <p>We implemented a basic BSDF in Mitsuba</p>
+      <p>We first worked on getting Mitsuba to work. We found that Mitsuba 2.0 no longer implemented rendering of hair and would require complicated steps to implement. Thus we switched over to Mitsuba 0.5 as it still implemented hair. In order to build the older version of Mitsuba, we had to make several changes to the build configuration files. This included porting them over to Python 3 and rewriting the files to link the Qt libraries correctly on Linux. </p>
+      <p>While in the end we were able to run Mitsuba, we found that the GUI crashes on Ubuntu and Mac but was successfully able to convert the scene.xml files that described the layout and meshes of the objects to 0.6, which allows Mitsuba to render the objects and save the result as a png file. </p>
+      
+      <h1>2. Basic Mirror BSDF</h1><hr/>
+      <p>We implemented a basic BSDF in Mitsuba in order to get more familiar with the structure of how BSDFs are implemented in Mitsuba. The BSDFs shared similar methods.</p>
+      <p> The mirror BSDF has only spectral reflection without diffuse, thus providing a mirror-like surface to the object. We also set roughness to 0 and experimented with different reflection patterns such as glossy and EDiscrete which resulted in different “blurriness” of the reflection. </p>
+      <img src="..." class="img-fluid">
+      <figcaption class="figure-caption">Exaggerated Specular</figcaption>
+  
+      <h1
     </div>
   </body>
 </html>
