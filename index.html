@@ -18,17 +18,21 @@
       <h1>2. Basic Mirror BSDF</h1><hr/>
       <p>We implemented a basic BSDF in Mitsuba in order to get more familiar with the structure of how BSDFs are implemented in Mitsuba. The BSDFs shared similar methods.</p>
       <p>The mirror BSDF has only spectral reflection without diffuse, thus providing a mirror-like surface to the object. We also set roughness to 0 and experimented with different reflection patterns such as glossy and EDiscrete which resulted in different “blurriness” of the reflection. </p>
-      <img src="image2.png" class="img-fluid">
-      <figcaption class="figure-caption">Teacup with Mirrored Surface</figcaption>
+      <div class="text-center">
+        <img src="image2.png" class="img-fluid">
+        <figcaption class="figure-caption">Teacup with Mirrored Surface</figcaption>
+      </div>
   
       <h1>3. Kajiya-Kay Hair Shading Model</h1><hr/>
       <p>We worked on implementing Kajiya-Kay first since we only had to adapt the specular term. </p>
-      <img src="image1.png" class="img-fluid">
-      <figcaption class="figure-caption">Exaggerated Specular</figcaption>
-      <img src="image3.png" class="img-fluid">
-      <figcaption class="figure-caption">Specular and Diffuse</figcaption>
-      <img src="image4.png" class="img-fluid">
-      <figcaption class="figure-caption">Original Blinn Phong Model</figcaption>
+      <div class="text-center">
+        <img src="image1.png" style="width:40%" class="img-fluid">
+        <figcaption class="figure-caption">Exaggerated Specular</figcaption>
+        <img src="image3.png" style="width:40%" class="img-fluid">
+        <figcaption class="figure-caption">Specular and Diffuse</figcaption>
+        <img src="image4.png" style="width:40%" class="img-fluid">
+        <figcaption class="figure-caption">Original Blinn Phong Model</figcaption>
+      </div>
   
       <h1>4. Getting an understanding of the Marschner Model</h1><hr/>
       <p>We spent a fair bit of time reading the literature behind the Marschner model, and gained a complete understanding of the intuition and mathematics of the BCSDF. This will be key as we look into implementation details and accelerations that may be necessary.</p>
